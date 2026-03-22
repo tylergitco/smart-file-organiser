@@ -18,8 +18,8 @@ It’s designed for situations where everything is named like `Lecture 1`, `Tuto
 ## What it does
 
 - Reads file content from:
-    - PDFs
-    - PowerPoint files (.pptx)
+  - PDFs
+  - PowerPoint files (`.pptx`)
 
 - Uses keyword scoring to figure out which subject a file belongs to (e.g. ECON104, FINC201)
 
@@ -37,25 +37,33 @@ It’s designed for situations where everything is named like `Lecture 1`, `Tuto
 
 ## Example
 
-Before:
-Lecture 1.pdf
-Lecture 2.pptx
-Tutorial 3 Questions.pdf
-IMG_2133.HEIC
+**Before:**
+- Lecture 1.pdf
+- Lecture 2.pptx
+- Tutorial 3 Questions.pdf
+- IMG_2133.HEIC
 
-After running:
-ECON104/
-FINC201/
-Images/
-Documents/
+**After:**
+- ECON104/
+- FINC201/
+- Images/
+- Documents/
 
 ---
 
 ## How to run
 
-1. Install dependencies: python3 -m pip install -r requirements.txt
-2. Run the program: python3 main.py
-3. Enter a folder path when prompted: /Users/yourname/Downloads/filesort_test
+1. Install dependencies:
+- python3 
+- -m pip install 
+- -r requirements.txt
+
+2. Run the program:
+- python3 main.py
+
+3. Enter a folder path when prompted:
+- /Users/yourname/Downloads/filesort_test
+
 
 4. Review the preview, then confirm if you want to sort the files
 
@@ -72,9 +80,10 @@ Documents/
 ---
 
 ## Files
-- main.py → main program
-- rules.json → subject keyword rules
-- requirements.txt
+
+- `main.py` → main program
+- `rules.json` → subject keyword rules
+- `requirements.txt`
 
 ---
 
