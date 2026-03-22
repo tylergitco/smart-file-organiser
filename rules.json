@@ -1,0 +1,22 @@
+{
+  "SENG365": {
+    "strong": ["seng365", "365"],
+    "medium": ["web", "api", "backend", "frontend", "express", "node", "rest", "http", "server"],
+    "weak": ["json", "route", "routing", "request", "response"]
+  },
+  "FINC201": {
+    "strong": ["finc201", "201"],
+    "medium": ["bond", "npv", "irr", "valuation", "discount", "interest", "cashflow", "finance"],
+    "weak": ["risk", "return", "yield", "capital"]
+  },
+  "ECON104": {
+    "strong": ["econ104", "104"],
+    "medium": ["elasticity", "subsidy", "welfare", "demand", "supply", "tax", "surplus", "economics"],
+    "weak": ["market", "equilibrium", "consumer", "producer"]
+  },
+  "INFO223": {
+    "strong": ["info223", "223"],
+    "medium": ["database", "sql", "erd", "entity", "relationship", "schema", "systems"],
+    "weak": ["data", "analysis", "model", "information"]
+  }
+}
