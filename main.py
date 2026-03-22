@@ -51,6 +51,10 @@ def sort_files(folder_path, files):
 
     for file in files:
         source_path = os.path.join(folder_path, file)
+
+        if not os.path.exists(source_path):
+            continue
+
         category, score = get_category(folder_path, file)
 
         destination_folder = os.path.join(folder_path, category)
@@ -72,13 +76,21 @@ def get_files(folder_path):
         files = []
 
         for item in items:
-            # 👇 ADD THIS HERE
+            # skip hidden files (mac junk)
             if item.startswith("."):
                 continue
 
             full_path = os.path.join(folder_path, item)
-            if os.path.isfile(full_path):
-                files.append(item)
+
+            # skip if not a real file
+            if not os.path.isfile(full_path):
+                continue
+
+            # skip mac apps and weird system stuff
+            if item.endswith(".app"):
+                continue
+
+            files.append(item)
 
         return files
 
@@ -117,9 +129,12 @@ def read_pdf_file(full_path):
         text = ""
 
         for page in reader.pages:
-            extracted = page.extract_text()
-            if extracted:
-                text += extracted + "\n"
+            try:
+                extracted = page.extract_text()
+                if extracted:
+                    text += extracted + "\n"
+            except Exception:
+                continue
 
         return text
     except Exception:
