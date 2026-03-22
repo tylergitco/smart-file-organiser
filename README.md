@@ -1,8 +1,17 @@
 # Smart File Organiser
 
-A Python program I built to organise messy folders (especially uni files) by actually reading what’s inside the files instead of just relying on filenames.
+A content-aware Python file organiser I built to organise messy folders (especially uni files) by actually reading what’s inside the files instead of just relying on filenames.
 
 It’s designed for situations where everything is named like `Lecture 1`, `Tutorial 2`, etc., and normal file sorting doesn’t work.
+
+---
+
+## Tech used
+
+- Python
+- pypdf
+- python-pptx
+- JSON
 
 ---
 
@@ -63,9 +72,9 @@ Documents/
 ---
 
 ## Files
-main.py → main program
-rules.json → subject keyword rules
-requirements.txt
+- main.py → main program
+- rules.json → subject keyword rules
+- requirements.txt
 
 ---
 
